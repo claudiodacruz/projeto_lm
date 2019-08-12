@@ -6,6 +6,9 @@ h1{
     letter-spacing: 0.1rem;
     font-size: 1.3rem;
 }
+.social{
+    align-items: center;
+}
 .social h1{
     text-align: center;
 }
@@ -68,6 +71,9 @@ h1{
 footer{
     color: white;
     text-align: left;
+}
+footer p{
+    text-align: center;
 }
 @keyframes rotacao{
     to{
