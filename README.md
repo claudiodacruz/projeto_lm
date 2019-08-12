@@ -1,6 +1,5 @@
-#projeto_lm
-
 Descrição do Projeto
+
 Site criado como parte dos requisitos de avaliação da disciplina de Linguagem de Marcação do curso de Sistemas para Internet do IFPB, campus João Pessoa (2019.1)
 
 Requisitos mínimos
