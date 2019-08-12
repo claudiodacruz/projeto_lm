@@ -1,0 +1,76 @@
+/* FOOTER */
+
+h1{
+    margin: 0.3em;
+    font-family: 'Libre Caslon Display', serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+}
+.social h1{
+    text-align: center;
+}
+.social ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    color: white;
+}
+  
+.social ul li {
+
+    margin: 1rem auto;
+    border: none;
+}
+  
+.social a {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social .facebook {
+    background-color: #4b64a6;
+}
+  
+.social .instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), 
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+  
+.social .twitter {
+    background-color: #00abf1;
+}
+  
+.social .youtube {
+    background-color: #c4302a;
+}
+
+.social a:hover{
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 3.0rem;
+    animation: rotacao 3s;
+}
+footer{
+    color: white;
+    text-align: left;
+}
+@keyframes rotacao{
+    to{
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,122 @@
+body{
+    background-image: linear-gradient(45deg,rgb(111,176,180),rgb(32, 117, 89));
+    font-family: 'Lato', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+header{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(11, 39, 63);
+    background-color: lightgray;
+    background-image: url(../imagens/capa.jpeg);
+    background-position: bottom right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    background-attachment: scroll;
+    height: 60vh;
+}
+
+/* DEPOIMENTOS */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testemonials {
+    width: 100%;
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1.4rem;  
+}
+
+.testemonials .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo h1{
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+.text img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    align-items: flex-start;
+}
+  
+.text {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (min-width:600px){
+    .testemonials{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .social ul li{
+        display: flex;
+    }
+    .social a:hover{
+        color: white;
+        width: 50px;
+        height: 50px;
+        font-size: 3.0rem;
+        border-radius: 50%;  
+    }
+}
+
+
+@media screen and (min-width:900px){
+    .testemonials{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .social ul li{
+        display: flex;
+    }
+    .social a:hover{
+        color: white;
+        width: 50px;
+        height: 50px;
+        font-size: 3.0rem;
+        border-radius: 50%;  
+    }
+}
+
+
+@media screen and (min-width:1100px){
+    .testemonials{
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .social ul {
+        display: flex;
+    } 
+    .social a:hover{
+        color: white;
+        width: 50px;
+        height: 50px;
+        font-size: 3.0rem;
+        border-radius: 50%;  
+    }
+}
+

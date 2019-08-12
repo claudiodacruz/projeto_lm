@@ -1,0 +1,139 @@
+body {
+    background-image: linear-gradient(45deg,rgb(111,176,180),rgb(32, 117, 89));
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+menu ul{
+    padding: 0 20px 0 20px;
+    width: 90vw;
+    height: 10%;
+}
+
+h1{
+    margin: 0.3em;
+    font-family: 'Libre Caslon Display', serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+/* TEXTO PRINCIPAL */
+.principal{
+    display: flex;
+    background-image: url(../imagens/organiza.jpeg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    background-blend-mode: normal;
+    background-attachment: scroll;
+    margin-bottom: 50px;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    text-align: center;
+}
+.principal h1{
+    font-size: 1.8rem;
+    height: 15vh;
+    width: 80%; 
+    padding-top: 20px; 
+}
+.principal p{
+    font-size: 1rem;
+    height: 40vh;
+    width: 80%;
+    margin: 20px;
+}
+
+/* CORPO*/
+
+.infos {
+    width: 100%;
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (6, 1fr);
+    grid-area: 
+    "roupas"
+    "text roupas"
+    "mudanca"
+    "text_mudanca"
+    "mala" 
+    "text_mala";
+    grid-gap: 1.2rem;  
+}
+.infos .text .imagens .roupas{
+    grid-area: roupas;
+}
+.infos .text .imagens .mudanca{
+    grid-area: mudanca;
+}
+.infos .text .imagens .mala{
+    grid-area: mala
+}
+.infos .text .texto .roupas{
+    grid-area: text_roupa;
+}
+.infos .text .texto .mudanca{
+    grid-area: text_mudanca;
+}
+.infos .text .texto .mala{
+    grid-area: text_mala;
+}
+
+.infos .text .texto {
+    width: 80%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (min-width:600px){
+    .infos {
+        width: 100%;
+        margin: 2.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-area: 
+        "roupas text_roupas "
+        "mudanca text_mudanca"
+        "mala text_mala";
+        grid-gap: 1.2rem;  
+    }
+    .principal h1{
+        font-size: 2.5rem;
+    }
+    .principal p{
+        font-size: 1.2rem;
+    }
+    .infos{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .social ul li{
+        display: flex;
+    }
+}
+@media screen and (min-width:900px){
+    .principal h1{
+        font-size: 2.5rem;
+    }
+    .principal p{
+        font-size: 1.2rem;
+    }
+    .infos{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .social ul li{
+        display: flex;
+    }
+}

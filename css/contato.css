@@ -1,0 +1,188 @@
+/* ESTILO GERAL*/
+body {
+    background-image: linear-gradient(45deg,rgb(111,176,180),rgb(32, 117, 89));
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0.3em;
+    font-family: 'Libre Caslon Display', serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+/* FORMATAÇÃO DA PÁGINA */
+menu ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.box {
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 40% 30% 20%;
+    grid-template-areas:
+    "header header"
+    "contato contato"
+    "mapa mapa"
+    "footer footer";
+}
+menu {
+    grid-area: header;
+}
+.contato {
+    grid-area: contato;
+
+}
+.mapa {
+    grid-area: mapa;
+}
+footer {
+    grid-area: footer;
+}
+
+/* FORMULÁRIO */
+.contatos {
+    padding: 0 20px 0 20px;
+    width: 80vw;
+    height: 40%;
+}
+
+.contatos main form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: .3rem;
+  }
+  
+.contatos main form input {
+    outline: none;
+    height: 1.3rem;
+}
+
+div .box_int {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 12px;
+    border: solid 2px rgb(22, 97, 72);
+}
+
+.box_int .form-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.nome {
+    width: 250px;
+}
+.telefone {
+    width: 100px;
+}
+.msg {
+    width: 210px;
+    height: 100px;
+}
+.email{
+    width: 250px;
+}
+
+/* MAPA */
+.mapa {
+    padding: 0;
+    width: 100%;
+    height: 70%;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    align-items: none;
+    align-content: none; 
+}
+footer p {
+    text-align: left;
+}
+
+
+/* RESPONSIVIDADE */
+@media screen and (min-width:600px){
+    .box {
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 10% 55% 35%;
+        grid-template-areas:
+        "header header"
+        "contato mapa"
+        "contato footer";
+    }
+    .box_int .form-group {
+        flex-direction: column;
+    }
+    .mapa {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: 280px; 
+    }
+    .contato{
+
+    }
+    footer{
+        padding-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    footer p {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width:900px){
+    menu{
+        margin-right: 40px;
+    }
+    .box {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 10% 55% 35%;
+        grid-template-areas:
+        "header header"
+        "contato mapa"
+        "footer mapa";
+    }
+    .box_int .form-group {
+        flex-direction: row;
+    }
+    .mapa {
+        padding-right: 0;
+        margin-left: 40px;
+        width: 90%;
+        height: 90%;
+    }
+
+    footer{
+        padding-top: 20px;
+    }
+    footer p {
+        text-align: left;
+    }
+}
+@media screen and (min-width:1100px){
+    menu{
+        margin-right: 60px;
+    }
+    .contato{
+        width: 80%;
+    }
+    footer{
+        width: 80%;
+    }
+    .mapa {
+        margin-left: 0;
+    }
+}
